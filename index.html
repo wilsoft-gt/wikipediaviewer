@@ -1,0 +1,34 @@
+<html>
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Asar|Titillium+Web" rel="stylesheet">
+    <title>Wikipedia</title>
+</head>
+<head>
+    <div class="main">
+        <div class="searchtools margintop pagination-centered" id="searchtools">
+            <h1 id="title">Wikipedia Viewer</h1>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random search</a> <br>
+                <input id="toseach" type="search" autocomplete="off" onkeypress="return evaluar(event)" placeholder="Search"><br>
+                <select id="languajes" class="">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <button id="clear" class="" onclick="clearSearch()">Clear</button>
+        </div>
+        <div id="jsontext">
+        </div>
+        <footer class="searchtools">
+            coded by <a href="https://codepen.io/wilsoft-gt/" target="_blank">wilsoft-gt</a>
+        </footer>
+    </div>
+    
+</body>
+</html>
