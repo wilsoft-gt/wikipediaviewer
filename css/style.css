@@ -12,7 +12,9 @@ h1, strong {
 }
 
 body {
-    background-color: rgb(16, 108, 212);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(to top left, rgb(169,207,103), rgb(0,128,128));
     color: white;
 }
 
