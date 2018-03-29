@@ -16,7 +16,7 @@ body {
     background-attachment: fixed;
     background: linear-gradient(to top left, rgb(169,207,103), rgb(0,128,128));
     color: white;
-}
+} 
 
 body > a:link {
     color: white;
