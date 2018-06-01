@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -11,23 +11,57 @@
     <title>Wikipedia</title>
 </head>
 <body>
-    <div class="main">
-        <div class="searchtools margintop pagination-centered" id="searchtools">
+    <div class="container-fluid margintop" id="searchtools">
+        <div class="row" style="text-align: center;">
+            <div class="col-8" style="margin: 0 auto;">
+                <h1 id="title">Wikipedia Viewer</h1> <br>
+                <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random search</a> <br>
+            </div>
+        </div>
+
+        <div class="row text-center" style="">
+            <div class="col-6" style="margin: 0 auto;">
+                <input type="search" id="toseach" class="form-control form-control-lg text-center" autocomplete="off" onkeypress="return evaluar(event)" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="col-4" style="margin: 0 auto;">
+            <div class="input-group">
+                    <select id="languajes" class="custom-select">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button id="clear" class="btn btn-light" onclick="clearSearch()">Clear search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row-10" id="jsontext">
+            </div>
+        </div>
+        <footer class="searchtools">
+            coded by <a href="https://codepen.io/wilsoft-gt/" target="_blank">wilsoft-gt</a>
+        </footer>
+
+
+<!--         <div class="searchtools margintop pagination-centered" id="searchtools">
             <h1 id="title">Wikipedia Viewer</h1>
             <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random search</a> <br>
-                <input id="toseach" type="search" autocomplete="off" onkeypress="return evaluar(event)" placeholder="Search"><br>
+                <input class="form-control" id="toseach" type="search" autocomplete="off" onkeypress="return evaluar(event)" placeholder="Search"><br>
                 <select id="languajes" class="">
                     <option value="en">English</option>
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
                 </select>
-                <button id="clear" class="" onclick="clearSearch()">Clear</button>
+                <button id="clear" class="btn" onclick="clearSearch()">Clear</button>
         </div>
         <div id="jsontext">
-        </div>
-        <footer class="searchtools">
-            coded by <a href="https://codepen.io/wilsoft-gt/" target="_blank">wilsoft-gt</a>
-        </footer>
+        </div> -->
+
     </div>
     
 </body>

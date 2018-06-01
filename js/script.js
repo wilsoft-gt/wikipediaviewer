@@ -3,9 +3,10 @@ function seach(){
     var tosearch = document.getElementById("toseach").value;
     var languaje = document.getElementById("languajes").value;
     document.getElementById("jsontext").innerHTML = "<div></div>";
-    $.getJSON("https://"+languaje+".wikipedia.org//w/api.php?action=opensearch&format=json&search=" + encodeURIComponent(tosearch) + "&origin=*&limit=25", function (json) {
+    $.getJSON("https://"+languaje+".wikipedia.org//w/api.php?action=opensearch&format=json&search=" + encodeURI(tosearch) + "&origin=*&limit=25", function (json) {
         var jsonlenght = Object.keys(json).length;
         var keyslenght = Object.keys(json[1]).length;
+        console.log(JSON.stringify(json))
         var html = "";
         for (var i = 1; i < keyslenght; i++){
             html = "<div class='item'>";
