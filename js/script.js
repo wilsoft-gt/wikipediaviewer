@@ -23,7 +23,7 @@ function seach(){
                         break;
                 }
             }
-            html += "</div></a>";
+            html += "</div></a><br>";
             document.getElementById("jsontext").innerHTML += html;
         }
     });

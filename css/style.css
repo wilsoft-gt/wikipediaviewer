@@ -30,7 +30,6 @@ a:link, a:visited{
 .item {
     border: 1px solid #ccc;
     border-radius: 10px;
-    margin: 20px 125px;
     background-image: url("../img/lupa_mosaico.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,12 +72,17 @@ select {
     font-size: 0.8em;
 }
 
-@media only screen and (max-width: 780px) {
-    .item {
-        margin: 20px 50px;
-    }
+@media only screen and (max-width: 640px) {
 
     strong {
         font-size: 1.4em;
+    }
+
+    #title {
+        font-size: 3em;
+    }
+
+    .margintop {
+        margin-top: 10vh;
     }
 }
